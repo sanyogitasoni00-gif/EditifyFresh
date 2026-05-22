@@ -1,0 +1,17 @@
+n= input ('enter value of n');
+x= 0:length(x)-1;
+subplot(2,2,1);
+stem(n,x);
+title('original signal');
+x1=fliplr(x);
+subplot(2,2,2);
+stem(n,x1);
+title('reverse signal');
+x2=(x+x1)/2;
+subplot(2,2,3);
+stem(n,x2);
+title('even signal');
+x3=(x-x1)/2;
+subplot(2,2,4);
+stem(n,x3);
+title('odd signal');

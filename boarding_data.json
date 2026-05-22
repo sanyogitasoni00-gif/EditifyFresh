@@ -1,0 +1,16 @@
+{
+  "charges": {
+    "dog": 600
+  },
+  "timings": "24 *7 Open",
+  "facilities": [
+    "No Cages",
+    "we not Tie",
+    "Playing time",
+    "Nutritious meals Provided",
+    "24*7 Infront Of Cooler"
+  ],
+  "location": "Scooby Pet Hostel, Ajmer, Rajasthan",
+  "map_link": "https://maps.google.com/?q=Scooby+Pet+Hostel+Ajmer",
+  "payment_info": "https://upi://pay?pa=abhimanyu2576@axl&pn=ScoobyHostel&am=100&cu=INR"
+}
