@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Editify Studio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:50px 20px;
+    background:linear-gradient(to right,#1e1e1e,#3a3a3a);
+}
+
+header h1{
+    font-size:55px;
+    color:#f5f5f5;
+    letter-spacing:3px;
+}
+
+header p{
+    margin-top:10px;
+    color:#cfcfcf;
+    font-size:18px;
+}
+
+.hero-image{
+    width:100%;
+    height:350px;
+    background:url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=1200&auto=format&fit=crop') center/cover;
+}
+
+.services{
+    padding:40px 20px;
+}
+
+.services h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:38px;
+    color:#e0e0e0;
+}
+
+.service-box{
+    background:#1f1f1f;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:20px;
+    transition:0.3s;
+    border:1px solid #444;
+}
+
+.service-box:hover{
+    transform:scale(1.02);
+    background:#2b2b2b;
+}
+
+.service-box input{
+    margin-right:10px;
+    transform:scale(1.2);
+}
+
+.service-box h3{
+    margin-bottom:8px;
+    color:#ffffff;
+}
+
+.price{
+    color:#9effc5;
+    font-weight:bold;
+}
+
+.book-section{
+    text-align:center;
+    margin:40px 0;
+}
+
+button{
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    background:#d4d4d4;
+    color:black;
+    font-size:18px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+button:hover{
+    background:white;
+    transform:scale(1.05);
+}
+
+.contact-page{
+    display:none;
+    text-align:center;
+    padding:50px 20px;
+    background:#1b1b1b;
+}
+
+.contact-page h2{
+    margin-bottom:20px;
+    font-size:40px;
+}
+
+.contact-page p{
+    margin:10px 0;
+    font-size:20px;
+}
+
+.contact-page a{
+    color:#8fd3ff;
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+    color:#d0d0d0;
+    margin-top:30px;
+    font-size:18px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Editify Studio &#x2728 </h1>
+    <p>Creative Editing For Your Beautiful Memories &#127916</p>
+</header>
+
+<div class="hero-image"></div>
+
+<section class="services">
+    <h2>Our Services </h2>
+
+    <div class="service-box">
+        <input type="checkbox" value="Photo Story Edit - 100 Rupees">
+        <h3>Photo Story Edit </h3>
+        <p>Beautiful Instagram story edits with aesthetic effects or templates.</p>
+        <p class="price">100 Rupees</p>
+    </div>
+
+    <div class="service-box">
+        <input type="checkbox" value="Reel Edit - 200 Rupees">
+        <h3>Reel Editing </h3>
+        <p>Trending reels with transitions,music & effects.</p>
+        <p class="price">200 Rupees</p>
+    </div>
+
+    <div class="service-box">
+        <input type="checkbox" value="Dance or Marketing Video Edit - 280 Rupees">
+        <h3>Dance / Marketing Video Editing </h3>
+        <p>Creative edits for dance videos or marketing video.</p>
+        <p class="price">280 Rupees</p>
+    </div>
+
+    <div class="service-box">
+        <input type="checkbox" value="YouTube or Wedding Reel Edit - 500 Rupees">
+        <h3>YouTube / Wedding Reel Editing </h3>
+        <p>Proffesional cinematic editing for YouTube , Wedding Reel Editing.</p>
+        <p class="price">500 Rupees</p>
+    </div>
+
+    <div class="service-box">
+        <input type="checkbox" value="Comic Love Story Edit - 700 Rupees">
+        <h3>Comic Love Story Edit </h3>
+        <p>Turn your Love Story into a beautiful comic.</p>
+        <p class="price">700 Rupees</p>
+    </div>
+
+    <div class="service-box">
+        <input type="checkbox" value="Animation - 3500 Rupees">
+        <h3>Animation </h3>
+        <p>2D Aesthetic animation.</p>
+        <p class="price">3500 Rupees</p>
+    </div>
+
+    <div class="service-box">
+        <input type="checkbox" value="Birthday or Anniversary Web Page - 1200 Rupees">
+        <h3>Birthday / Anniversary Web Page </h3>
+        <p>Custom suprised webpage for your loved ones.</p>
+        <p class="price">1200 Rupees</p>
+    </div>
+
+    <div class="service-box">
+        <input type="checkbox" value="Content Writing or Magazine - 700 Rupees">
+        <h3>Content Writing / Magazine </h3>
+        <p>Make your quality time Memories forever in the form of magzine and write something special in content way for your priority.</p>
+        <p class="price">700 Rupees</p>
+    </div>
+
+    <div class="book-section">
+        <button onclick="bookNow()">Book Now</button>
+    </div>
+</section>
+
+<section class="contact-page" id="contactPage">
+    <h2>Contact Editify Studio</h2>
+
+    <p>Email:</p>
+    <p>Click on the mail to DM me.</p>
+
+    <p>
+        <a id="mailLink" href="#">
+            sanyogitasoni00@gmail.com
+        </a>
+    </p>
+
+</section>
+
+<footer>
+    Make your journey memorable with creativity — Goru
+</footer>
+
+<script>
+function bookNow(){
+
+    let selected = [];
+    let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+
+    checkboxes.forEach((box)=>{
+        selected.push(box.value);
+    });
+
+    let subject = "Booking Request For Editify Studio";
+
+    let body = "Hello Editify Studio,%0D%0A%0D%0A" +
+               "I want to book these services:%0D%0A%0D%0A" +
+               selected.join("%0D%0A") +
+               "%0D%0A%0D%0APlease contact me regarding the editing work.";
+
+    let emailLink = document.getElementById("mailLink");
+
+    emailLink.href = `mailto:sanyogitasoni00@gmail.com?subject=${subject}&body=${body}`;
+
+    document.getElementById("contactPage").style.display = "block";
+
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    });
+}
+</script>
+
+</body>
+</html>
