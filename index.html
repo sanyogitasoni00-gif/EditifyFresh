@@ -235,14 +235,6 @@ function bookNow(){
     let selected = [];
     let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
 
-    //user Details
-    let details = 
-            document.getElementById("userdetails").value;
-    let name = 
-            document.getElementById("userName").value;
-        let Whatsappno =
-            document.getElementById("userWhatsapp").value;
-
     checkboxes.forEach((box)=>{
         selected.push(box.value);
     });
@@ -250,9 +242,6 @@ function bookNow(){
     let subject = "Booking Request For Editify Studio";
 
     let body = "Hello Editify Studio,%0D%0A%0D%0A" +
-               "Please fill your details:%0D%0A" +
-               "Name:" +
-               "Whatsapp No:" +
                "I want to book these services:%0D%0A%0D%0A" +
                selected.join("%0D%0A") +
                "%0D%0A%0D%0APlease contact me regarding the editing work.";
